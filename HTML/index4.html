@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos CSS :: Desafio Latam</title>
+    <style>
+        /* 3 formas de dar estilo */
+        /* por elemento (por etiqueta) todos se ven afectados*/
+        /* hexadecimal(#000000) 00-00-00 / rojo-verde-azul -->1,2,3,4,5,6,7,8,9,A,B,C,D,E,F*/
+        /* RGB (rgb(0,0,0)) de 0 a 255 para cada color*/
+        
+        p {
+            color: blueviolet;
+            background-color: cornsilk;
+            font-size: 12px;
+        }
+        /*estilo por la clase puede afectar a uno o varios elementos*/
+        
+        .pcolores {
+            color: limegreen;
+            font-size: 16px;
+        }
+        /*por id, estilo unico al elemento*/
+        
+        #parra3 {
+            color: magenta;
+            font-size: 20px;
+        }
+        
+        #divisor {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="divisor">
+        <p>Parrafo 1</p>
+        <p class="pcolores">Parrafo 2</p>
+        <p id="parra3">Parrafo 3</p>
+        <p class="pcolores">Parrafo 4</p>
+    </div>
+</body>
+
+</html>
